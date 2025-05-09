@@ -11,6 +11,8 @@ import { toast } from "sonner"
 import { CodeBlock } from "@/components/code-block"
 
 const questions = [
+
+  
   {
     id: 1,
     type: "closed",
