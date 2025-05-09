@@ -28,7 +28,7 @@ export async function POST(request) {
       message += `*Natijalar:* ${correctAnswers.length}/${totalQuestions} (${score}%)\n\n`
 
       // Add first 10 answers (to avoid message length limits)
-      answers.slice(0, 30).forEach((answer, index) => {
+      answers.slice(0, 10).forEach((answer, index) => {
         message += `${index + 1}. ${answer.question.substring(0, 30)}...\n`
         message += `Javob: ${answer.answer}\n`
         message +=
